@@ -9,7 +9,7 @@ import {makeStyles} from "@material-ui/core/styles";
 const styles = makeStyles({
     bar:{
         paddingTop: "1.15rem",
-        backgroundColor: "#fff",
+        backgroundColor: "#2E4165",
         '@media (max-width:780px)': { 
            flexDirection: "column"
           }
@@ -31,7 +31,7 @@ const styles = makeStyles({
         cursor: "pointer", 
         flexGrow: 1,
         "&:hover": {
-            color:  "#4f25c8"
+            color:  "#5979B3"
         },
         '@media (max-width:780px)': { 
             paddingBottom: "1rem"    }
@@ -41,23 +41,20 @@ const styles = makeStyles({
 function NavBar() {
     const classes = styles()
     return (
-            <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>   
-                <img src={logo} className={classes.logo}/> 
+            <Toolbar position="sticky" color="rgba(2, 0, 0, 0.87)" className={classes.bar}>   
+                <img src="logo.svg" class="logo"/>
                 <img src={logoMobile} className={classes.logoMobile}/> 
                 <Typography variant="h6" className={classes.menuItem}>
                    About
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Blog
+                    Work
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Careers
+                    Commisions 
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Demos 
-                </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
-                    Contact Us 
+                    Contact  
                 </Typography>
                 <CustomBtn txt="Trial Our Product"/>
             </Toolbar>

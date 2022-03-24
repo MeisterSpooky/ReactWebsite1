@@ -15,10 +15,10 @@ import HttpIcon from '@material-ui/icons/Http';
 const theme = createTheme({
   palette: {
     primary: {
-      main:"#2e1667",
+      main:"#000",
     },
     secondary: {
-      main:"#c7d8ed",
+      main:"#5979B3",
     },
   },
   typography: {
@@ -59,21 +59,25 @@ const styles = makeStyles({
 
 function App() {
   const classes = styles(); 
-
+  document.body.style = 'background: #1B263B';
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
         <NavBar/>
         <div className={classes.wrapper}>
           <Typography variant="h4" className={classes.bigSpace} color="primary">
-             At Rocket.io we are passionate about software
+             Art is my world
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales congue tristique. Cras non pretium sem. Duis interdum lorem sit amet ligula pretium, sed rutrum urna semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus egestas gravida ullamcorper.
+          My name is Shane Kresbach, I am a 20 year old artist struggling with severe OCD. 
+          For years I had drawn without knowing the purpose behind my work, but once I was 
+          diagnosed with OCD, one day I realized that all my artwork was a manifestation of my 
+          disorder. I had been subconsiously expressing all the awful ways OCD has affected me.
+          In all my artwork you will see an expression of my OCD in some shape or form.
           </Typography>
         </div>
         <div className={`${classes.grid} ${classes.bigSpace}`}>
-          <Grid icon={<SecurityIcon style={{fill: "#4360A6", height:"125", width:"125"}}/>}  title="Secure" btnTitle="Show me More" />
+          <Grid icon={<SecurityIcon style={{fill: "#4360A6", height:"125", width:"125"}}/>}  title="Secure" btnTitle="Show me More"/>
           <Grid icon={<EventNoteIcon style={{fill: "#449A76", height:"125", width:"125"}}/>} title="Reliable" btnTitle="Show me More"/>
           <Grid icon={<TrendingUpIcon style={{fill: "#D05B2D", height:"125", width:"125"}}/>}  title="Performant" btnTitle="Show me More"/>
         </div>

@@ -7,6 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
 function Footer() {
+  document.body.style = 'background: #1B263B';
     return (
         <BottomNavigation >
           <BottomNavigationAction color="red" label="Facebook" value="recents" icon={<FacebookIcon  style={{fill: "#3b5998"}}/>} />
